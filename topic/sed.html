@@ -1,0 +1,268 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+
+<!-- Mirrored from writeup.org/topic/sed by HTTrack Website Copier/3.x [XR&CO'2006], Sat, 23 Feb 2013 20:43:56 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>sed | writeup.org</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="alternate" type="application/rss+xml" title="RSS - sed" href="../taxonomy/term/2/0/feedhtml.html" />
+<link rel="shortcut icon" href="../sites/all/themes/acquia_marina/favicon.ico" type="image/x-icon" />
+  <link type="text/css" rel="stylesheet" media="all" href="http://writeup.org/modules/node/node.css?E" />
+<link type="text/css" rel="stylesheet" media="all" href="http://writeup.org/modules/system/defaults.css?E" />
+<link type="text/css" rel="stylesheet" media="all" href="http://writeup.org/modules/system/system.css?E" />
+<link type="text/css" rel="stylesheet" media="all" href="http://writeup.org/modules/system/system-menus.css?E" />
+<link type="text/css" rel="stylesheet" media="all" href="http://writeup.org/modules/user/user.css?E" />
+<link type="text/css" rel="stylesheet" media="all" href="http://writeup.org/modules/taxonomy/taxonomy.css?E" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/themes/fusion/fusion_core/css/style3a3e.css?E" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/themes/fusion/fusion_core/css/typography3a3e.css?E" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/themes/fusion/fusion_core/css/superfish3a3e.css?E" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/themes/fusion/fusion_core/css/superfish-navbar3a3e.css?E" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/themes/fusion/fusion_core/css/superfish-vertical3a3e.css?E" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/all/themes/acquia_marina/css/fusion-acquia-marina-style3a3e.css?E" />
+  <link type="text/css" rel="stylesheet" media="all" href="../sites/all/themes/fusion/fusion_core/css/grid16-9603a3e.css?E"/>
+  <!--[if IE 8]>
+  <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/fusion/fusion_core/css/ie8-fixes.css?E" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/acquia_marina/css/ie8-fixes.css?E" />
+  <![endif]-->
+  <!--[if IE 7]>
+  <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/fusion/fusion_core/css/ie7-fixes.css?E" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/acquia_marina/css/ie7-fixes.css?E" />
+  <![endif]-->
+  <!--[if lte IE 6]>
+  <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/fusion/fusion_core/css/ie6-fixes.css?E"/>
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/acquia_marina/css/ie6-fixes.css?E"/>
+  <![endif]-->
+    <script type="text/javascript" src="http://writeup.org/misc/jquery.js?E"></script>
+<script type="text/javascript" src="http://writeup.org/misc/drupal.js?E"></script>
+<script type="text/javascript" src="../sites/all/modules/google_analytics/googleanalytics3a3e.js?E"></script>
+<script type="text/javascript" src="../sites/all/themes/fusion/fusion_core/js/jquery.bgiframe.min3a3e.js?E"></script>
+<script type="text/javascript" src="../sites/all/themes/fusion/fusion_core/js/hoverIntent3a3e.js?E"></script>
+<script type="text/javascript" src="../sites/all/themes/fusion/fusion_core/js/supposition3a3e.js?E"></script>
+<script type="text/javascript" src="../sites/all/themes/fusion/fusion_core/js/supersubs3a3e.js?E"></script>
+<script type="text/javascript" src="../sites/all/themes/fusion/fusion_core/js/superfish3a3e.js?E"></script>
+<script type="text/javascript" src="../sites/all/themes/fusion/fusion_core/js/script3a3e.js?E"></script>
+<script type="text/javascript" src="../sites/all/themes/acquia_marina/js/jquery.corner3a3e.js?E"></script>
+<script type="text/javascript" src="../sites/all/themes/acquia_marina/js/acquia-marina-script3a3e.js?E"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/", "googleanalytics": { "trackOutbound": 1, "trackMailto": 1, "trackDownload": 1, "trackDownloadExtensions": "7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip" } });
+//--><!]]>
+</script>
+</head>
+
+<body id="pid-topic-sed" class="not-front not-logged-in page-taxonomy no-sidebars layout-first-main sidebars-split font-size-14 grid-type-960 grid-width-16">
+  <div id="page" class="page">
+    <div id="page-inner" class="page-inner">
+      <div id="skip">
+        <a href="#main-content-area">Skip to Main Content Area</a>
+      </div>
+
+      <!-- header-top row: width = grid_width -->
+      
+      <!-- header-group row: width = grid_width -->
+      <div id="header-group-wrapper" class="header-group-wrapper full-width">
+        <div id="header-group" class="header-group row grid16-16">
+          <div id="header-group-inner" class="header-group-inner inner clearfix">
+                        <div id="header-group-inner-top" class="clearfix">
+              <div id="search-box" class="search-box block">
+<div id="search-box-inner" class="search-box-inner inner clearfix">
+<form action="http://writeup.org/topic/sed"  accept-charset="UTF-8" method="post" id="search-theme-form">
+<div>
+<div id="search" class="container-inline">
+    <input class="search-input form-text" type="text" maxlength="128" name="search_theme_form" id="edit-search-theme-form-header"  size="15" value="" title="Enter the terms you wish to search for" />
+  <input class="search-submit" type="submit" name="op" value="Search"/>
+  <input type="hidden" name="form_build_id" id="form-5721cffdac15d72dabe2303b3c113432" value="form-5721cffdac15d72dabe2303b3c113432"  />
+<input type="hidden" name="form_id" id="edit-search-theme-form" value="search_theme_form"  />
+  </div>
+<div class="corner-bottom"><div class="corner-bottom-right corner"></div><div class="corner-bottom-left corner"></div></div>
+</div></form>
+</div><!-- /search-box-inner -->
+</div><!-- /search-box -->
+                          </div>
+                                    <div id="header-group-inner-inner" class="clearfix">
+                            <div id="header-site-info" class="header-site-info block">
+                <div id="header-site-info-inner" class="header-site-info-inner inner">
+                                    <div id="logo">
+                    <a href="../index.html" title="Home"><img src="../sites/default/files/acquia_marina_logo.png" alt="Home" /></a>
+                  </div>
+                                                      <div id="site-name-wrapper" class="clearfix">
+                                        <span id="site-name"><a href="../index.html" title="Home">writeup.org</a></span>
+                                                          </div><!-- /site-name-wrapper -->
+                                  </div><!-- /header-site-info-inner -->
+              </div><!-- /header-site-info -->
+                                        </div>
+                        <div id="primary-menu" class="primary-menu block">
+<div id="primary-menu-inner" class="primary-menu-inner inner clearfix">
+<ul class="menu sf-menu"><li class="leaf first"><a href="../webdesign.html" title="Website Design">Website Design</a></li>
+<li class="leaf"><a href="drupal-writeup-filter.html" title="Drupal Writeup input filter">Drupal Filter</a></li>
+<li class="leaf"><a href="scripts.html" title="Sample scripts for running Writeup">Scripts</a></li>
+<li class="leaf"><a href="../quickref.html" title="Writeup 2.0 Quick Reference Guide">Writeup Quick Ref</a></li>
+<li class="leaf"><a href="../training.html" title="Drupal Training Course">Drupal Training</a></li>
+<li class="leaf last"><a href="../fullref.html" title="Writeup 2.0 Full Reference Guide">Writeup Full Reference</a></li>
+</ul></div><!-- /primary-menu-inner -->
+</div><!-- /primary-menu -->
+          </div><!-- /header-group-inner -->
+        </div><!-- /header-group -->
+      </div><!-- /header-group-wrapper -->
+
+      <!-- preface-top row: width = grid_width -->
+        
+            <div id="preface-top-wrapper" class="preface-top-wrapper full-width">
+        <div id="preface-top" class="preface-top row grid16-16">
+          <div id="preface-top-inner" class="preface-top-inner inner clearfix">
+          </div><!-- /preface-top-inner -->
+        </div><!-- /preface-top -->
+      </div><!-- /preface-top-wrapper -->
+      
+    <!-- main row: width = grid_width -->
+    <div id="main-wrapper" class="main-wrapper full-width">
+      <div id="main" class="main row grid16-16">
+        <div id="main-inner" class="main-inner inner clearfix">
+          <div id="sidebar-first" class="sidebar-first row nested grid16-3">
+<div id="sidebar-first-inner" class="sidebar-first-inner inner clearfix">
+
+<div id="block-menu-menu-topics" class="block block-menu odd first  grid16-3">
+  <div class="inner">
+    <div class="corner-top"><div class="corner-top-right corner"></div><div class="corner-top-left corner"></div></div>
+      	<div class="inner-wrapper">
+      <div class="inner-inner">
+                <div class="block-icon pngfix"></div>
+        <h2 class="title block-title">Topics</h2>
+                <div class="content clearfix">
+          <ul class="menu"><li class="leaf first"><a href="pdf.html" title="Creation and Manipulation of PDFs">PDFs</a></li>
+<li class="leaf"><a href="fonts.html" title="Articles about web fonts">fonts</a></li>
+<li class="leaf last active-trail"><a href="sed.html" title="The sed editor" class="active">sed</a></li>
+</ul>        </div>
+      </div><!-- /inner-inner -->
+	  </div><!-- /inner-wrapper -->
+    <div class="corner-bottom"><div class="corner-bottom-right corner"></div><div class="corner-bottom-left corner"></div></div>
+  </div><!-- /inner -->
+</div><!-- /block -->
+<div id="block-user-0" class="block block-user even  last  grid16-3">
+  <div class="inner">
+    <div class="corner-top"><div class="corner-top-right corner"></div><div class="corner-top-left corner"></div></div>
+      	<div class="inner-wrapper">
+      <div class="inner-inner">
+                <div class="block-icon pngfix"></div>
+        <h2 class="title block-title">User login</h2>
+                <div class="content clearfix">
+          <form action="http://writeup.org/topic/sed?destination=taxonomy%2Fterm%2F2"  accept-charset="UTF-8" method="post" id="user-login-form">
+<div><div class="form-item" id="edit-name-wrapper">
+ <label for="edit-name">Username: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" maxlength="60" name="name" id="edit-name" size="15" value="" class="form-text required" />
+</div>
+<div class="form-item" id="edit-pass-wrapper">
+ <label for="edit-pass">Password: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="password" name="pass" id="edit-pass"  maxlength="60"  size="15"  class="form-text required" />
+</div>
+<input type="submit" name="op" id="edit-submit" value="Log in"  class="form-submit" />
+<div class="item-list"><ul><li class="first last"><a href="../user/password.html" title="Request new password via e-mail.">Request new password</a></li>
+</ul></div><input type="hidden" name="form_build_id" id="form-57302a9d7a859101f38ff4b877714a3f" value="form-57302a9d7a859101f38ff4b877714a3f"  />
+<input type="hidden" name="form_id" id="edit-user-login-block" value="user_login_block"  />
+
+</div></form>
+        </div>
+      </div><!-- /inner-inner -->
+	  </div><!-- /inner-wrapper -->
+    <div class="corner-bottom"><div class="corner-bottom-right corner"></div><div class="corner-bottom-left corner"></div></div>
+  </div><!-- /inner -->
+</div><!-- /block --></div><!-- /sidebar-first-inner -->
+</div><!-- /sidebar-first -->
+
+          <!-- main group: width = grid_width - sidebar_first_width -->
+          <div id="main-group" class="main-group row nested grid16-13">
+            <div id="main-group-inner" class="main-group-inner inner clearfix">
+              
+              <div id="main-content" class="main-content row nested">
+                <div id="main-content-inner" class="main-content-inner inner clearfix">
+                  <!-- content group: width = grid_width - (sidebar_first_width + sidebar_last_width) -->
+                    <div id="content-group" class="content-group row nested grid16-13">
+                      <div id="content-group-inner" class="content-group-inner inner clearfix">
+                        
+                        
+                        <div id="content-region" class="content-region row nested">
+                          <div id="content-region-inner" class="content-region-inner inner clearfix">
+                            <a name="main-content-area" id="main-content-area"></a>
+                                                        <div id="content-inner" class="content-inner block">
+                              <div id="content-inner-inner" class="content-inner-inner inner clearfix">
+                                                                <h1 class="title">sed</h1>
+                                                                                                <div id="content-content" class="content-content">
+                                  <div class="taxonomy-term-description">text processing with sed</div>
+<div id="node-6" class="node odd teaser node-type-story">
+  <div class="inner">
+    
+        <h2 class="title"><a href="../content/converting-ascii-values-128.html" title="Converting ASCII values &gt; 128">Converting ASCII values &gt; 128</a></h2>
+    
+        <div class="meta">
+      <span class="submitted">Submitted by siteadmin on Fri, 02/25/2011 - 17:00</span>
+    </div>
+    
+    
+    <div class="content clearfix">
+      <p>ASCII is not standardized for values over 127, but common implementations use ISO-8859-1.<br />
+the iconv and other utilities are described here <a href="http://garron.me/linux/charset-encoding-html-change.html">Almost Everything You Need to Know about Charset Encoding, UTF-8, ISO-8859. Conversion and More</a></p>
+<p>A quick and dirty translation of some characters into standard ASCII can be done with sed:<br />
+for ASCII table, see <a href="http://www.ascii-code.com/" title="http://www.ascii-code.com/">http://www.ascii-code.com/</a><br />
+<code><br />
+sed -e 's%^~%$VER=1.45\n~%' \<br />
+    -e 's%\x91%\x27%g' \<br />
+    -e 's%\x92%\x27%g' \<br />
+    -e 's%\x93%"%g' \<br />
+    -e 's%\x94%"%g' \</code></p>
+    </div>
+
+        <div class="terms">
+      <ul class="links inline"><li class="taxonomy_term_2 first last active"><a href="sed.html" rel="tag" title="text processing with sed" class="active">sed</a></li>
+</ul>    </div>
+    
+        <div class="links">
+      <ul class="links inline"><li class="node_read_more first last"><a href="../content/converting-ascii-values-128.html" title="Read the rest of Converting ASCII values &gt; 128.">Read more</a></li>
+</ul>    </div>
+      </div><!-- /inner -->
+
+  </div><!-- /node-6 -->
+                                  <a href="../taxonomy/term/2/0/feedhtml.html" class="feed-icon"><img src="http://writeup.org/misc/feed.png" alt="Syndicate content" title="RSS - sed" width="16" height="16" /></a>                                </div><!-- /content-content -->
+                                                              </div><!-- /content-inner-inner -->
+                            </div><!-- /content-inner -->
+                          </div><!-- /content-region-inner -->
+                        </div><!-- /content-region -->
+
+                                              </div><!-- /content-group-inner -->
+                    </div><!-- /content-group -->
+
+                                      </div><!-- /main-content-inner -->
+                </div><!-- /main-content -->
+
+                              </div><!-- /main-group-inner -->
+            </div><!-- /main-group -->
+          </div><!-- /main-inner -->
+        </div><!-- /main -->
+      </div><!-- /main-wrapper -->
+
+      <!-- postscript-bottom row: width = grid_width -->
+      
+      <!-- footer row: width = grid_width -->
+      
+      <!-- footer-message row: width = grid_width -->
+      <div id="footer-message-wrapper" class="footer-message-wrapper full-width">
+        <div id="footer-message" class="footer-message row grid16-16">
+          <div id="footer-message-inner" class="footer-message-inner inner clearfix">
+                      </div><!-- /footer-message-inner -->
+        </div><!-- /footer-message -->
+      </div><!-- /footer-message-wrapper -->
+
+    </div><!-- /page-inner -->
+  </div><!-- /page -->
+  <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-1575606-26"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//--><!]]>
+</script>
+</body>
+
+<!-- Mirrored from writeup.org/topic/sed by HTTrack Website Copier/3.x [XR&CO'2006], Sat, 23 Feb 2013 20:43:57 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+</html>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://writeup.org"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>writeup.org - PDF</title>
+ <link>http://writeup.org/taxonomy/term/1/0</link>
+ <description>Creation and Manipulation of PDFs</description>
+ <language>en</language>
+<item>
+ <title>Create pdf posters</title>
+ <link>http://writeup.org/create-pdf-posters</link>
+ <description>&lt;p&gt;The program &lt;a href=&quot;http://pypi.python.org/pypi/pdftools.pdfposter&quot;&gt;pdfposter&lt;/a&gt; can turn a single page into a multi-page poster.&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;http://propheris.com/strategy-development/design/print-large-pdfs-over-multiple-pages-easily-in-linux-with-pdfposter/&quot;&gt;Read about it here&lt;/a&gt;.&lt;/li&gt;&lt;/ul&gt;</description>
+ <category domain="http://writeup.org/topic/pdf">PDF</category>
+ <pubDate>Tue, 01 Jan 2013 17:28:55 +0000</pubDate>
+ <dc:creator>Andrew</dc:creator>
+ <guid isPermaLink="false">26 at http://writeup.org</guid>
+</item>
+<item>
+ <title>Resize PDF A4 to letter</title>
+ <link>http://writeup.org/resize-pdf-a4-letter</link>
+ <description>&lt;p&gt;After a lot of searching on the interwebs I finally found a simple and reliable way to do this seemingly simple task.&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Install pdfjam (this example is for Debian/Ubuntu)
+&lt;div&gt;&lt;code&gt;apt-get install pdfjam&lt;/code&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;Resize PDF page (insert your own filenames)
+&lt;div&gt;&lt;code&gt;pdfjoin infilename.pdf --paper letterpaper --fitpaper false --outfile outfilename.pdf&lt;/code&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+ <category domain="http://writeup.org/topic/pdf">PDF</category>
+ <pubDate>Sat, 24 Dec 2011 04:22:03 +0000</pubDate>
+ <dc:creator>Andrew</dc:creator>
+ <guid isPermaLink="false">12 at http://writeup.org</guid>
+</item>
+<item>
+ <title>html to pdf conversion with pisa/xhtml2pdf</title>
+ <link>http://writeup.org/content/html-pdf-conversion-pisaxhtml2pdf</link>
+ <description>&lt;p&gt;Up until now I have been using wkhtmltopdf to create pdfs, but is seems there is another alternative to explore: &lt;a href=&quot;http://www.xhtml2pdf.com&quot; title=&quot;http://www.xhtml2pdf.com&quot;&gt;http://www.xhtml2pdf.com&lt;/a&gt; and &lt;a href=&quot;http://pypi.python.org/pypi/pisa/&quot; title=&quot;http://pypi.python.org/pypi/pisa/&quot;&gt;http://pypi.python.org/pypi/pisa/&lt;/a&gt;&lt;br /&gt;
+I&#039;ll report back with a comparison.&lt;/p&gt;
+</description>
+ <comments>http://writeup.org/content/html-pdf-conversion-pisaxhtml2pdf#comments</comments>
+ <category domain="http://writeup.org/topic/pdf">PDF</category>
+ <pubDate>Fri, 01 Apr 2011 17:51:45 +0000</pubDate>
+ <dc:creator>siteadmin</dc:creator>
+ <guid isPermaLink="false">7 at http://writeup.org</guid>
+</item>
+<item>
+ <title>Using wkhtmltopdf to create pdfs</title>
+ <link>http://writeup.org/using-wkhtmltopdf-create-pdfs</link>
+ <description>&lt;p&gt;Writeup source files can be used to automatically create pdfs using the very useful tool: wkhtmltopdf&lt;br /&gt;
+This can be installed in a Debian-based system (such as Ubuntu) with:&lt;br /&gt;
+&lt;code&gt;sudo apt-get install wkhtmltopdf&lt;/code&gt;&lt;br /&gt;
+It is now possible to convert a writeup file to a pdf in two automated steps:&lt;br /&gt;
+&lt;code&gt;writeup myfile&lt;br /&gt;
+wkhtmltopdf -s Letter -L 20 -R 20 -T 15 --zoom 1.2 myfile.html myfile.pdf&lt;br /&gt;
+&lt;/code&gt;&lt;br /&gt;
+Options:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;-s Letter&lt;/strong&gt; - paper size&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;-L 20&lt;/strong&gt; - Left margin 20mm (ditto for R T and B)&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;http://writeup.org/using-wkhtmltopdf-create-pdfs&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <category domain="http://writeup.org/topic/pdf">PDF</category>
+ <pubDate>Tue, 21 Dec 2010 02:07:39 +0000</pubDate>
+ <dc:creator>siteadmin</dc:creator>
+ <guid isPermaLink="false">5 at http://writeup.org</guid>
+</item>
+<item>
+ <title>Manipulating PDFs</title>
+ <link>http://writeup.org/manipulating-pdfs</link>
+ <description>&lt;p&gt;Using pdfjam to make pdf impositions&lt;/p&gt;
+&lt;h3&gt;Installation&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;apt-get install pdfjam pdftk&lt;/pre&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;For more information on pdfjam see here:&lt;br /&gt;
+&lt;a href=&quot;http://www2.warwick.ac.uk/fac/sci/statistics/staff/academic/firth/software/pdfjam/&quot; title=&quot;http://www2.warwick.ac.uk/fac/sci/statistics/staff/academic/firth/software/pdfjam/&quot;&gt;http://www2.warwick.ac.uk/fac/sci/statistics/staff/academic/firth/softwa...&lt;/a&gt;&lt;br /&gt;
+and here:&lt;br /&gt;
+&lt;a href=&quot;http://www.ctan.org/tex-archive/macros/latex/contrib/pdfpages/pdfpages.pdf&quot; title=&quot;http://www.ctan.org/tex-archive/macros/latex/contrib/pdfpages/pdfpages.pdf&quot;&gt;http://www.ctan.org/tex-archive/macros/latex/contrib/pdfpages/pdfpages.pdf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;For information on pdftk see here:&lt;br /&gt;
+&lt;a href=&quot;http://www.pdflabs.com/docs/pdftk-man-page/&quot; title=&quot;http://www.pdflabs.com/docs/pdftk-man-page/&quot;&gt;http://www.pdflabs.com/docs/pdftk-man-page/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;#2 up - first rotate to portrait (two alternative, fixed page or to end)&lt;br /&gt;
+&lt;code&gt;&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;pdftk A=TOC-2009a.pdf B=TOC-2009b.pdf cat A1-38L B1-18L output out.pdf
+&lt;/pre&gt;&lt;p&gt;&lt;a href=&quot;http://writeup.org/manipulating-pdfs&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <category domain="http://writeup.org/topic/pdf">PDF</category>
+ <pubDate>Sun, 05 Dec 2010 03:45:43 +0000</pubDate>
+ <dc:creator>siteadmin</dc:creator>
+ <guid isPermaLink="false">4 at http://writeup.org</guid>
+</item>
+</channel>
+</rss>

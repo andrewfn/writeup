@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://writeup.org"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>writeup.org</title>
+ <link>http://writeup.org</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Another RC for Writeup 2.0 released</title>
+ <link>http://writeup.org/content/another-rc-writeup-20-released</link>
+ <description>&lt;p&gt;A new release candidate for Writeup 2.0 (1.99.16) is now available at &lt;a href=&quot;https://sourceforge.net/projects/writeup/&quot;&gt;sourceforge&lt;/a&gt; in Linux, Mac and Windows versions.&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;The main change, as well as a few bug fixes, is better microdata support for time. Previously dates were supported, but now there is good support for time, both as microdata and in the &lt;code&gt;&amp;lt;time&amp;gt;&lt;/code&gt; tag.&lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;For a full list of changes, see the &lt;a href=&quot;/changelog&quot;&gt;changelog&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;The &lt;a href=&quot;quickref&quot;&gt;documentation&lt;/a&gt; continues to be improved, although it should probably no longer be called “quick reference” but “full reference”.&lt;/li&gt;&lt;/ul&gt;</description>
+ <comments>http://writeup.org/content/another-rc-writeup-20-released#comments</comments>
+ <pubDate>Fri, 20 Jul 2012 15:26:34 +0000</pubDate>
+ <dc:creator>Andrew</dc:creator>
+ <guid isPermaLink="false">21 at http://writeup.org</guid>
+</item>
+<item>
+ <title>Release Candidate of Writeup 2.0 includes a Mac verision</title>
+ <link>http://writeup.org/content/final-rc-writeup-20-includes-mac-verision</link>
+ <description>&lt;p&gt;The release candidate for Writeup 2.0 has been released on sourceforge. See &lt;a href=&quot;http://sourceforge.net/projects/writeup/files/&quot;&gt;sourceforge.net/projects/writeup/files/&lt;/a&gt; for the download page. New features kept creeping in and delaying the release, but this looks good.&lt;/p&gt;
+&lt;p&gt;The Drupal module for allowing Writeup to be an input filter is now stable. See &lt;a href=&quot;http://drupal.org/project/writeup&quot;&gt;drupal.org/project/writeup&lt;/a&gt;.&lt;/p&gt;</description>
+ <comments>http://writeup.org/content/final-rc-writeup-20-includes-mac-verision#comments</comments>
+ <pubDate>Mon, 16 Apr 2012 22:53:13 +0000</pubDate>
+ <dc:creator>siteadmin</dc:creator>
+ <guid isPermaLink="false">17 at http://writeup.org</guid>
+</item>
+<item>
+ <title>Writeup 2.0 RC-3 released</title>
+ <link>http://writeup.org/content/writeup-20-rc-3-released</link>
+ <description>&lt;p&gt;The third release candidate for Writeup 2.0 has been released. The binary can be downloaded from &lt;a href=&quot;https://writeup.googlecode.com/svn/bin/writeup&quot;&gt;Google code Writeup binary v1.94.03&lt;/a&gt;. It will be made available on sourceforge in a few days along with a new shell script for invoking it that extracts multiple commands from the source file and runs them.&lt;/p&gt;</description>
+ <comments>http://writeup.org/content/writeup-20-rc-3-released#comments</comments>
+ <pubDate>Sun, 26 Feb 2012 18:12:15 +0000</pubDate>
+ <dc:creator>siteadmin</dc:creator>
+ <guid isPermaLink="false">16 at http://writeup.org</guid>
+</item>
+<item>
+ <title>Release of Drupal 6 module</title>
+ <link>http://writeup.org/content/release-drupal-6-module</link>
+ <description>&lt;p&gt;The first non-development release of the &amp;lt;^http://http://drupal.org/project/writeup^Drupal 6 Writeup module^&amp;gt; was made today.&lt;br /&gt;
+As well as tidying up some minor code style formatting, the release adds an error message if the Writeup processor issues any warnings or errors.&lt;br /&gt;
+The Drupal 7 version should be coming soon!&lt;/p&gt;
+</description>
+ <comments>http://writeup.org/content/release-drupal-6-module#comments</comments>
+ <category domain="http://writeup.org/topic/drupal">Drupal</category>
+ <pubDate>Sun, 26 Feb 2012 18:07:01 +0000</pubDate>
+ <dc:creator>siteadmin</dc:creator>
+ <guid isPermaLink="false">15 at http://writeup.org</guid>
+</item>
+<item>
+ <title>Fonts that best display symbols</title>
+ <link>http://writeup.org/content/fonts-best-display-symbols</link>
+ <description>&lt;p&gt;This is a test of various symbols and how they display in web fonts. First we have to test what fonts are installed on typical browsers.&lt;/p&gt;
+&lt;h2&gt;Test of Fonts Installed&lt;/h2&gt;
+&lt;p&gt;If not installed, will show as Webdings, (assuming Webdings is on your computer).&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://writeup.org/content/fonts-best-display-symbols&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <comments>http://writeup.org/content/fonts-best-display-symbols#comments</comments>
+ <category domain="http://writeup.org/topic/fonts">fonts</category>
+ <pubDate>Sat, 20 Aug 2011 19:25:52 +0000</pubDate>
+ <dc:creator>Andrew</dc:creator>
+ <guid isPermaLink="false">10 at http://writeup.org</guid>
+</item>
+<item>
+ <title>A Plea From 16 Most Overused Fonts</title>
+ <link>http://writeup.org/content/plea-16-most-overused-fonts</link>
+ <description>&lt;p&gt;Fun post about overused fonts:&lt;/p&gt;
+&lt;p&gt;Fonts that got together with a plea to give them a break and forget about their existence for the next 25 years.&lt;/p&gt;
+&lt;p&gt;Every typeface ever designed was created to serve a certain purpose with a specific mood or tone. In addition to the individual traits of each font and its family, there are only two kinds of types — display and text. Display faces, known for their decorative features, are meant to be used sparingly and in bigger sizes, they are illegible otherwise. Text faces are great for extensive amounts of readable copy, they commonly sport a conservative no-frills look. More here: &lt;a href=&quot;http://www.inspirationbit.com/a-plea-from-16-most-overused-fonts/&quot;&gt;www.inspirationbit.com/a-plea-from-16-most-overused-fonts/&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://writeup.org/content/plea-16-most-overused-fonts&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <comments>http://writeup.org/content/plea-16-most-overused-fonts#comments</comments>
+ <category domain="http://writeup.org/topic/fonts">fonts</category>
+ <pubDate>Fri, 19 Aug 2011 00:04:06 +0000</pubDate>
+ <dc:creator>Andrew</dc:creator>
+ <guid isPermaLink="false">9 at http://writeup.org</guid>
+</item>
+<item>
+ <title>Linux Font Equivalents to Popular Web Typefaces</title>
+ <link>http://writeup.org/content/linux-font-equivalents-popular-web-typefaces</link>
+ <description>&lt;p&gt;Very useful article:&lt;/p&gt;
+&lt;p&gt;I have written before about my admiration for Web typography, and in that article I touched on the fact that many “Web safe” fonts can’t be applied to Linux. Linux distributions each ship with their own font libraries, but I’d like to focus on similar typefaces you can use within a font-family to help make your design bulletproof.&lt;br /&gt;
+Like Windows &amp;amp; OS X, Linux does type too&lt;/p&gt;
+&lt;p&gt;I’ve been a Linux user for some time now, and Linux is my platform of choice both at work and at home. My distribution of choice is Ubuntu not because it’s the most popular, but because I’ve tried a wide variety of Linux versions, and Ubuntu works the best for me. I say this because I’m going to focus on the fonts that ship by default with Ubuntu, so there may be some discrepancy among distributions.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://mondaybynoon.com/2007/04/02/linux-font-equivalents-to-popular-web-typefaces/&quot;&gt;more here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://writeup.org/content/linux-font-equivalents-popular-web-typefaces&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <comments>http://writeup.org/content/linux-font-equivalents-popular-web-typefaces#comments</comments>
+ <category domain="http://writeup.org/topic/fonts">fonts</category>
+ <pubDate>Thu, 18 Aug 2011 23:59:34 +0000</pubDate>
+ <dc:creator>Andrew</dc:creator>
+ <guid isPermaLink="false">8 at http://writeup.org</guid>
+</item>
+<item>
+ <title>html to pdf conversion with pisa/xhtml2pdf</title>
+ <link>http://writeup.org/content/html-pdf-conversion-pisaxhtml2pdf</link>
+ <description>&lt;p&gt;Up until now I have been using wkhtmltopdf to create pdfs, but is seems there is another alternative to explore: &lt;a href=&quot;http://www.xhtml2pdf.com&quot; title=&quot;http://www.xhtml2pdf.com&quot;&gt;http://www.xhtml2pdf.com&lt;/a&gt; and &lt;a href=&quot;http://pypi.python.org/pypi/pisa/&quot; title=&quot;http://pypi.python.org/pypi/pisa/&quot;&gt;http://pypi.python.org/pypi/pisa/&lt;/a&gt;&lt;br /&gt;
+I&#039;ll report back with a comparison.&lt;/p&gt;
+</description>
+ <comments>http://writeup.org/content/html-pdf-conversion-pisaxhtml2pdf#comments</comments>
+ <category domain="http://writeup.org/topic/pdf">PDF</category>
+ <pubDate>Fri, 01 Apr 2011 17:51:45 +0000</pubDate>
+ <dc:creator>siteadmin</dc:creator>
+ <guid isPermaLink="false">7 at http://writeup.org</guid>
+</item>
+<item>
+ <title>Converting ASCII values &gt; 128</title>
+ <link>http://writeup.org/content/converting-ascii-values-128</link>
+ <description>&lt;p&gt;ASCII is not standardized for values over 127, but common implementations use ISO-8859-1.&lt;br /&gt;
+the iconv and other utilities are described here &lt;a href=&quot;http://garron.me/linux/charset-encoding-html-change.html&quot;&gt;Almost Everything You Need to Know about Charset Encoding, UTF-8, ISO-8859. Conversion and More&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A quick and dirty translation of some characters into standard ASCII can be done with sed:&lt;br /&gt;
+for ASCII table, see &lt;a href=&quot;http://www.ascii-code.com/&quot; title=&quot;http://www.ascii-code.com/&quot;&gt;http://www.ascii-code.com/&lt;/a&gt;&lt;br /&gt;
+&lt;code&gt;&lt;br /&gt;
+sed -e &#039;s%^~%$VER=1.45\n~%&#039; \&lt;br /&gt;
+    -e &#039;s%\x91%\x27%g&#039; \&lt;br /&gt;
+    -e &#039;s%\x92%\x27%g&#039; \&lt;br /&gt;
+    -e &#039;s%\x93%&quot;%g&#039; \&lt;br /&gt;
+    -e &#039;s%\x94%&quot;%g&#039; \&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://writeup.org/content/converting-ascii-values-128&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <comments>http://writeup.org/content/converting-ascii-values-128#comments</comments>
+ <category domain="http://writeup.org/topic/sed">sed</category>
+ <pubDate>Fri, 25 Feb 2011 21:00:12 +0000</pubDate>
+ <dc:creator>siteadmin</dc:creator>
+ <guid isPermaLink="false">6 at http://writeup.org</guid>
+</item>
+<item>
+ <title>Drupal Training Course</title>
+ <link>http://writeup.org/training</link>
+ <description>&lt;h1&gt;The Drupal Content Management System&lt;/h1&gt;
+&lt;ul class=&quot;bluepoints ul1&quot;&gt;
+&lt;li class=&quot;ul1&quot;&gt;Three days, personalized to two days&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Introduction&lt;/h2&gt;
+&lt;ul class=&quot;bluepoints ul1&quot;&gt;
+&lt;li class=&quot;ul1&quot;&gt;Physical requirements&lt;/li&gt;
+&lt;li class=&quot;ul1&quot;&gt;Distributions: core Drupal, Acquia, Pressflow, Open Atrium, Civicspace&lt;/li&gt;
+&lt;li class=&quot;ul1&quot;&gt;examples of some high profile sites in Drupal&lt;br /&gt;
+&lt;ul class=&quot;ul2&quot;&gt;
+&lt;li class=&quot;ul2&quot;&gt;&lt;a href=&quot;whitehouse.gov&quot;&gt;whitehouse.gov&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;ul2&quot;&gt;the economist&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;http://writeup.org/training&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <pubDate>Sat, 13 Nov 2010 20:08:43 +0000</pubDate>
+ <dc:creator>siteadmin</dc:creator>
+ <guid isPermaLink="false">3 at http://writeup.org</guid>
+</item>
+</channel>
+</rss>

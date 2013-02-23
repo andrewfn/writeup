@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://writeup.org"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>writeup.org - sed</title>
+ <link>http://writeup.org/taxonomy/term/2/0</link>
+ <description>text processing with sed</description>
+ <language>en</language>
+<item>
+ <title>Converting ASCII values &gt; 128</title>
+ <link>http://writeup.org/content/converting-ascii-values-128</link>
+ <description>&lt;p&gt;ASCII is not standardized for values over 127, but common implementations use ISO-8859-1.&lt;br /&gt;
+the iconv and other utilities are described here &lt;a href=&quot;http://garron.me/linux/charset-encoding-html-change.html&quot;&gt;Almost Everything You Need to Know about Charset Encoding, UTF-8, ISO-8859. Conversion and More&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A quick and dirty translation of some characters into standard ASCII can be done with sed:&lt;br /&gt;
+for ASCII table, see &lt;a href=&quot;http://www.ascii-code.com/&quot; title=&quot;http://www.ascii-code.com/&quot;&gt;http://www.ascii-code.com/&lt;/a&gt;&lt;br /&gt;
+&lt;code&gt;&lt;br /&gt;
+sed -e &#039;s%^~%$VER=1.45\n~%&#039; \&lt;br /&gt;
+    -e &#039;s%\x91%\x27%g&#039; \&lt;br /&gt;
+    -e &#039;s%\x92%\x27%g&#039; \&lt;br /&gt;
+    -e &#039;s%\x93%&quot;%g&#039; \&lt;br /&gt;
+    -e &#039;s%\x94%&quot;%g&#039; \&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://writeup.org/content/converting-ascii-values-128&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <comments>http://writeup.org/content/converting-ascii-values-128#comments</comments>
+ <category domain="http://writeup.org/topic/sed">sed</category>
+ <pubDate>Fri, 25 Feb 2011 21:00:12 +0000</pubDate>
+ <dc:creator>siteadmin</dc:creator>
+ <guid isPermaLink="false">6 at http://writeup.org</guid>
+</item>
+</channel>
+</rss>

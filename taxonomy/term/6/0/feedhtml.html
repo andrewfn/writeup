@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://writeup.org"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>writeup.org - Scripts</title>
+ <link>http://writeup.org/taxonomy/term/6/0</link>
+ <description>Sample scripts for running Writeup</description>
+ <language>en</language>
+<item>
+ <title>Compiling on a Mac</title>
+ <link>http://writeup.org/compiling-mac</link>
+ <description>&lt;ul&gt;&lt;li&gt;Get a free Apple developer ID and download from here.
+&lt;div&gt;&lt;a href=&quot;http://kennethreitz.com/xcode-gcc-and-homebrew.html&quot;&gt;kennethreitz.com/xcode-gcc-and-homebrew.html&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li class=&quot;newline&quot;&gt;the command line (terminal) is usually found under the ‘Applications’ folder, and then the ‘Utilities’ folder&lt;/li&gt;
+&lt;li&gt;See also: &lt;a href=&quot;http://mxcl.github.com/homebrew/&quot;&gt;mxcl.github.com/homebrew/&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+ <category domain="http://writeup.org/topic/scripts">Scripts</category>
+ <pubDate>Wed, 04 Jul 2012 19:44:34 +0000</pubDate>
+ <dc:creator>siteadmin</dc:creator>
+ <guid isPermaLink="false">20 at http://writeup.org</guid>
+</item>
+<item>
+ <title>Bash Script for running Writeup</title>
+ <link>http://writeup.org/bash-script-running-writeup</link>
+ <description>&lt;pre&gt;
+#!/bin/bash
+# script to compile writeup file from $command variable
+# uncomment *one* of the two following lines. a) run from command line b) run within gedit
+#file=$1
+file=$GEDIT_CURRENT_DOCUMENT_NAME
+
+ext=${file: -4}
+if [ &quot;$ext&quot; != &quot;.txt&quot; ]; then
+  echo &quot;Type&quot; $ext &quot;is not a Writeup file&quot;
+  exit 1
+fi
+
+command=`writeup -yqqx command $file`
+if [ &quot;$command&quot; != &quot;NOT_FOUND&quot; ]; then eval $command
+  if [ $? -ne 0 ]; then exit 1; fi
+  echo COMMANDS COMPLETED SUCCESSFULLY
+else
+  wtype=`writeup -yqqx TYPE $file`
+  if [ &quot;$wtype&quot; == &quot;writeup&quot; ]; then
+    writeup -y $file
+  else
+    echo $file &quot;is not a Writeup main document but of type:&quot; $wtype
+    exit 1
+  fi
+fi
+&lt;/pre&gt;&lt;p&gt;&lt;a href=&quot;http://writeup.org/bash-script-running-writeup&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <category domain="http://writeup.org/topic/scripts">Scripts</category>
+ <pubDate>Wed, 27 Jun 2012 14:41:25 +0000</pubDate>
+ <dc:creator>siteadmin</dc:creator>
+ <guid isPermaLink="false">19 at http://writeup.org</guid>
+</item>
+</channel>
+</rss>

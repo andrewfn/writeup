@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://writeup.org"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>writeup.org - Drupal Writeup filter</title>
+ <link>http://writeup.org/taxonomy/term/5/0</link>
+ <description>The Drupal Writeup input filter</description>
+ <language>en</language>
+<item>
+ <title>Custom Status Pages</title>
+ <link>http://writeup.org/custom-status-pages</link>
+ <description> pre {overflow:auto; border:solid 1px #9AACAE; background:#EFEFEF; margin:5px; padding:5px;} 
+
+&lt;h2&gt;Creating a custom status page for the &lt;a href=&quot;http://drupal.org/project/writeup&quot;&gt;Drupal Writeup input filter&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;&lt;li class=&quot;newline&quot;&gt;The &lt;a href=&quot;http://drupal.org/project/writeup&quot;&gt;Writeup input filter&lt;/a&gt; now contains an api function &lt;code&gt;writeup_status($ssql)&lt;/code&gt; which may be called from any page that has the php input filter turned on.&lt;/li&gt;
+&lt;li class=&quot;newline&quot;&gt;To emulate the built in &lt;code&gt;writeup_status page&lt;/code&gt;, create a new page with the php input format and use this code. It will list all body fields that use the Writeup filter:&lt;/li&gt;&lt;/ul&gt;
+&lt;pre&gt;
+&amp;lt;?php
+$sql = &quot;SELECT n.nid, t.name AS format, r.format AS format_id, r.title, r.body FROM {node} n
+  JOIN {node_revisions} r on r.vid = n.vid
+  JOIN {filters} f on f.format = r.format
+  JOIN {filter_formats} t on t.format = r.format
+  WHERE f.module=&#039;writeup&#039;
+  ORDER BY t.name, r.title&quot;;
+print writeup_status($sql);
+?&amp;gt;
+&lt;/pre&gt;&lt;p&gt;&lt;a href=&quot;http://writeup.org/custom-status-pages&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <category domain="http://writeup.org/topic/drupal">Drupal</category>
+ <category domain="http://writeup.org/topic/drupal-writeup-filter">Drupal Writeup filter</category>
+ <pubDate>Mon, 21 May 2012 15:17:31 +0000</pubDate>
+ <dc:creator>siteadmin</dc:creator>
+ <guid isPermaLink="false">18 at http://writeup.org</guid>
+</item>
+</channel>
+</rss>
